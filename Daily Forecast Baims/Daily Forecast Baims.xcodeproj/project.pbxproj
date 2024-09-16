@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB2CD30D2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD30C2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift */; };
+		AB2CD30F2C98B13A0098C7E8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */; };
+		AB2CD3122C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */; };
+		AB2CD3142C98B13A0098C7E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3132C98B13A0098C7E8 /* ContentView.swift */; };
+		AB2CD3162C98B13C0098C7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */; };
+		AB2CD31A2C98B13C0098C7E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2CD3192C98B13C0098C7E8 /* Preview Assets.xcassets */; };
+		AB2CD3242C98B13C0098C7E8 /* Daily_Forecast_BaimsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3232C98B13C0098C7E8 /* Daily_Forecast_BaimsTests.swift */; };
+		AB2CD32E2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD32D2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift */; };
+		AB2CD3302C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB2CD3202C98B13C0098C7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2CD3012C98B13A0098C7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2CD3082C98B13A0098C7E8;
+			remoteInfo = "Daily Forecast Baims";
+		};
+		AB2CD32A2C98B13C0098C7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2CD3012C98B13A0098C7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2CD3082C98B13A0098C7E8;
+			remoteInfo = "Daily Forecast Baims";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB2CD3092C98B13A0098C7E8 /* Daily Forecast Baims.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Forecast Baims.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2CD30C2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsApp.swift; sourceTree = "<group>"; };
+		AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AB2CD3112C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daily_Forecast_Baims.xcdatamodel; sourceTree = "<group>"; };
+		AB2CD3132C98B13A0098C7E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB2CD3172C98B13C0098C7E8 /* Daily_Forecast_Baims.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Daily_Forecast_Baims.entitlements; sourceTree = "<group>"; };
+		AB2CD3192C98B13C0098C7E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB2CD31F2C98B13C0098C7E8 /* Daily Forecast BaimsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily Forecast BaimsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2CD3232C98B13C0098C7E8 /* Daily_Forecast_BaimsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsTests.swift; sourceTree = "<group>"; };
+		AB2CD3292C98B13C0098C7E8 /* Daily Forecast BaimsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily Forecast BaimsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2CD32D2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsUITests.swift; sourceTree = "<group>"; };
+		AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2CD3062C98B13A0098C7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2CD31C2C98B13C0098C7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2CD3262C98B13C0098C7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB2CD3002C98B13A0098C7E8 = {
+			isa = PBXGroup;
+			children = (
+				AB2CD30B2C98B13A0098C7E8 /* Daily Forecast Baims */,
+				AB2CD3222C98B13C0098C7E8 /* Daily Forecast BaimsTests */,
+				AB2CD32C2C98B13C0098C7E8 /* Daily Forecast BaimsUITests */,
+				AB2CD30A2C98B13A0098C7E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB2CD30A2C98B13A0098C7E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3092C98B13A0098C7E8 /* Daily Forecast Baims.app */,
+				AB2CD31F2C98B13C0098C7E8 /* Daily Forecast BaimsTests.xctest */,
+				AB2CD3292C98B13C0098C7E8 /* Daily Forecast BaimsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB2CD30B2C98B13A0098C7E8 /* Daily Forecast Baims */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD30C2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift */,
+				AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */,
+				AB2CD3132C98B13A0098C7E8 /* ContentView.swift */,
+				AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */,
+				AB2CD3172C98B13C0098C7E8 /* Daily_Forecast_Baims.entitlements */,
+				AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */,
+				AB2CD3182C98B13C0098C7E8 /* Preview Content */,
+			);
+			path = "Daily Forecast Baims";
+			sourceTree = "<group>";
+		};
+		AB2CD3182C98B13C0098C7E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3192C98B13C0098C7E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB2CD3222C98B13C0098C7E8 /* Daily Forecast BaimsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3232C98B13C0098C7E8 /* Daily_Forecast_BaimsTests.swift */,
+			);
+			path = "Daily Forecast BaimsTests";
+			sourceTree = "<group>";
+		};
+		AB2CD32C2C98B13C0098C7E8 /* Daily Forecast BaimsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD32D2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift */,
+				AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */,
+			);
+			path = "Daily Forecast BaimsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB2CD3082C98B13A0098C7E8 /* Daily Forecast Baims */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2CD3332C98B13C0098C7E8 /* Build configuration list for PBXNativeTarget "Daily Forecast Baims" */;
+			buildPhases = (
+				AB2CD3052C98B13A0098C7E8 /* Sources */,
+				AB2CD3062C98B13A0098C7E8 /* Frameworks */,
+				AB2CD3072C98B13A0098C7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Daily Forecast Baims";
+			productName = "Daily Forecast Baims";
+			productReference = AB2CD3092C98B13A0098C7E8 /* Daily Forecast Baims.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB2CD31E2C98B13C0098C7E8 /* Daily Forecast BaimsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2CD3362C98B13C0098C7E8 /* Build configuration list for PBXNativeTarget "Daily Forecast BaimsTests" */;
+			buildPhases = (
+				AB2CD31B2C98B13C0098C7E8 /* Sources */,
+				AB2CD31C2C98B13C0098C7E8 /* Frameworks */,
+				AB2CD31D2C98B13C0098C7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2CD3212C98B13C0098C7E8 /* PBXTargetDependency */,
+			);
+			name = "Daily Forecast BaimsTests";
+			productName = "Daily Forecast BaimsTests";
+			productReference = AB2CD31F2C98B13C0098C7E8 /* Daily Forecast BaimsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB2CD3282C98B13C0098C7E8 /* Daily Forecast BaimsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2CD3392C98B13C0098C7E8 /* Build configuration list for PBXNativeTarget "Daily Forecast BaimsUITests" */;
+			buildPhases = (
+				AB2CD3252C98B13C0098C7E8 /* Sources */,
+				AB2CD3262C98B13C0098C7E8 /* Frameworks */,
+				AB2CD3272C98B13C0098C7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2CD32B2C98B13C0098C7E8 /* PBXTargetDependency */,
+			);
+			name = "Daily Forecast BaimsUITests";
+			productName = "Daily Forecast BaimsUITests";
+			productReference = AB2CD3292C98B13C0098C7E8 /* Daily Forecast BaimsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2CD3012C98B13A0098C7E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AB2CD3082C98B13A0098C7E8 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AB2CD31E2C98B13C0098C7E8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AB2CD3082C98B13A0098C7E8;
+					};
+					AB2CD3282C98B13C0098C7E8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AB2CD3082C98B13A0098C7E8;
+					};
+				};
+			};
+			buildConfigurationList = AB2CD3042C98B13A0098C7E8 /* Build configuration list for PBXProject "Daily Forecast Baims" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB2CD3002C98B13A0098C7E8;
+			productRefGroup = AB2CD30A2C98B13A0098C7E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB2CD3082C98B13A0098C7E8 /* Daily Forecast Baims */,
+				AB2CD31E2C98B13C0098C7E8 /* Daily Forecast BaimsTests */,
+				AB2CD3282C98B13C0098C7E8 /* Daily Forecast BaimsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB2CD3072C98B13A0098C7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2CD31A2C98B13C0098C7E8 /* Preview Assets.xcassets in Resources */,
+				AB2CD3162C98B13C0098C7E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2CD31D2C98B13C0098C7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2CD3272C98B13C0098C7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2CD3052C98B13A0098C7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2CD30D2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift in Sources */,
+				AB2CD30F2C98B13A0098C7E8 /* Persistence.swift in Sources */,
+				AB2CD3142C98B13A0098C7E8 /* ContentView.swift in Sources */,
+				AB2CD3122C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2CD31B2C98B13C0098C7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2CD3242C98B13C0098C7E8 /* Daily_Forecast_BaimsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2CD3252C98B13C0098C7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2CD3302C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift in Sources */,
+				AB2CD32E2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB2CD3212C98B13C0098C7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2CD3082C98B13A0098C7E8 /* Daily Forecast Baims */;
+			targetProxy = AB2CD3202C98B13C0098C7E8 /* PBXContainerItemProxy */;
+		};
+		AB2CD32B2C98B13C0098C7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2CD3082C98B13A0098C7E8 /* Daily Forecast Baims */;
+			targetProxy = AB2CD32A2C98B13C0098C7E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB2CD3312C98B13C0098C7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB2CD3322C98B13C0098C7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AB2CD3342C98B13C0098C7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Daily Forecast Baims/Daily_Forecast_Baims.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Daily Forecast Baims/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FY7X4DLUG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Daily-Forecast-Baims";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB2CD3352C98B13C0098C7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Daily Forecast Baims/Daily_Forecast_Baims.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Daily Forecast Baims/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FY7X4DLUG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Daily-Forecast-Baims";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB2CD3372C98B13C0098C7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FY7X4DLUG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Daily-Forecast-BaimsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily Forecast Baims.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily Forecast Baims";
+			};
+			name = Debug;
+		};
+		AB2CD3382C98B13C0098C7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FY7X4DLUG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Daily-Forecast-BaimsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily Forecast Baims.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily Forecast Baims";
+			};
+			name = Release;
+		};
+		AB2CD33A2C98B13C0098C7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FY7X4DLUG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Daily-Forecast-BaimsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Daily Forecast Baims";
+			};
+			name = Debug;
+		};
+		AB2CD33B2C98B13C0098C7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FY7X4DLUG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Daily-Forecast-BaimsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Daily Forecast Baims";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB2CD3042C98B13A0098C7E8 /* Build configuration list for PBXProject "Daily Forecast Baims" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2CD3312C98B13C0098C7E8 /* Debug */,
+				AB2CD3322C98B13C0098C7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2CD3332C98B13C0098C7E8 /* Build configuration list for PBXNativeTarget "Daily Forecast Baims" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2CD3342C98B13C0098C7E8 /* Debug */,
+				AB2CD3352C98B13C0098C7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2CD3362C98B13C0098C7E8 /* Build configuration list for PBXNativeTarget "Daily Forecast BaimsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2CD3372C98B13C0098C7E8 /* Debug */,
+				AB2CD3382C98B13C0098C7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2CD3392C98B13C0098C7E8 /* Build configuration list for PBXNativeTarget "Daily Forecast BaimsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2CD33A2C98B13C0098C7E8 /* Debug */,
+				AB2CD33B2C98B13C0098C7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB2CD3112C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodel */,
+			);
+			currentVersion = AB2CD3112C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodel */;
+			path = Daily_Forecast_Baims.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB2CD3012C98B13A0098C7E8 /* Project object */;
+}
