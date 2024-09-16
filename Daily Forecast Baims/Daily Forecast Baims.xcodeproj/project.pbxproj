@@ -16,6 +16,7 @@
 		AB2CD3242C98B13C0098C7E8 /* Daily_Forecast_BaimsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3232C98B13C0098C7E8 /* Daily_Forecast_BaimsTests.swift */; };
 		AB2CD32E2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD32D2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift */; };
 		AB2CD3302C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */; };
+		AB2CD33D2C98B16C0098C7E8 /* ApiKeys in Resources */ = {isa = PBXBuildFile; fileRef = AB2CD33C2C98B16C0098C7E8 /* ApiKeys */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AB2CD3292C98B13C0098C7E8 /* Daily Forecast BaimsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily Forecast BaimsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2CD32D2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsUITests.swift; sourceTree = "<group>"; };
 		AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB2CD33C2C98B16C0098C7E8 /* ApiKeys */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApiKeys; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		AB2CD3002C98B13A0098C7E8 = {
 			isa = PBXGroup;
 			children = (
+				AB2CD33C2C98B16C0098C7E8 /* ApiKeys */,
 				AB2CD30B2C98B13A0098C7E8 /* Daily Forecast Baims */,
 				AB2CD3222C98B13C0098C7E8 /* Daily Forecast BaimsTests */,
 				AB2CD32C2C98B13C0098C7E8 /* Daily Forecast BaimsUITests */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2CD33D2C98B16C0098C7E8 /* ApiKeys in Resources */,
 				AB2CD31A2C98B13C0098C7E8 /* Preview Assets.xcassets in Resources */,
 				AB2CD3162C98B13C0098C7E8 /* Assets.xcassets in Resources */,
 			);
