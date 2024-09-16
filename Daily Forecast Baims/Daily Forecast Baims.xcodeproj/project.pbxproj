@@ -17,6 +17,7 @@
 		AB2CD32E2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD32D2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift */; };
 		AB2CD3302C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */; };
 		AB2CD33D2C98B16C0098C7E8 /* ApiKeys in Resources */ = {isa = PBXBuildFile; fileRef = AB2CD33C2C98B16C0098C7E8 /* ApiKeys */; };
+		AB2CD33F2C98B1E50098C7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD33E2C98B1E50098C7E8 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AB2CD32D2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsUITests.swift; sourceTree = "<group>"; };
 		AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB2CD33C2C98B16C0098C7E8 /* ApiKeys */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApiKeys; sourceTree = "<group>"; };
+		AB2CD33E2C98B1E50098C7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				AB2CD30C2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift */,
 				AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */,
 				AB2CD3132C98B13A0098C7E8 /* ContentView.swift */,
+				AB2CD33E2C98B1E50098C7E8 /* AppDelegate.swift */,
 				AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */,
 				AB2CD3172C98B13C0098C7E8 /* Daily_Forecast_Baims.entitlements */,
 				AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */,
@@ -272,6 +275,7 @@
 				AB2CD30D2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift in Sources */,
 				AB2CD30F2C98B13A0098C7E8 /* Persistence.swift in Sources */,
 				AB2CD3142C98B13A0098C7E8 /* ContentView.swift in Sources */,
+				AB2CD33F2C98B1E50098C7E8 /* AppDelegate.swift in Sources */,
 				AB2CD3122C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Daily_Forecast_BaimsApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
