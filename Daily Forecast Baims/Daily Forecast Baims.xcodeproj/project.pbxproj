@@ -28,6 +28,10 @@
 		AB2CD35E2C98C08D0098C7E8 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD35D2C98C08D0098C7E8 /* WeatherRepository.swift */; };
 		AB2CD3602C98C0E30098C7E8 /* WeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD35F2C98C0E30098C7E8 /* WeatherRepositoryImpl.swift */; };
 		AB2CD3622C98C1790098C7E8 /* GetWeatherForecastUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3612C98C1790098C7E8 /* GetWeatherForecastUseCase.swift */; };
+		AB2CD3672C98C8060098C7E8 /* WeatherForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3662C98C8060098C7E8 /* WeatherForecastView.swift */; };
+		AB2CD3692C98C8140098C7E8 /* WeatherForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3682C98C8140098C7E8 /* WeatherForecastViewModel.swift */; };
+		AB2CD36E2C98CB8E0098C7E8 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD36D2C98CB8E0098C7E8 /* AlertManager.swift */; };
+		AB2CD3732C98CD4C0098C7E8 /* UnitsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3722C98CD4C0098C7E8 /* UnitsEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		AB2CD35D2C98C08D0098C7E8 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		AB2CD35F2C98C0E30098C7E8 /* WeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImpl.swift; sourceTree = "<group>"; };
 		AB2CD3612C98C1790098C7E8 /* GetWeatherForecastUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherForecastUseCase.swift; sourceTree = "<group>"; };
+		AB2CD3662C98C8060098C7E8 /* WeatherForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastView.swift; sourceTree = "<group>"; };
+		AB2CD3682C98C8140098C7E8 /* WeatherForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewModel.swift; sourceTree = "<group>"; };
+		AB2CD36D2C98CB8E0098C7E8 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		AB2CD3722C98CD4C0098C7E8 /* UnitsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,8 @@
 				AB2CD30C2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift */,
 				AB2CD3472C98B6940098C7E8 /* Core */,
 				AB2CD3462C98B6650098C7E8 /* Network */,
+				AB2CD36B2C98CB6F0098C7E8 /* DesignSystem */,
+				AB2CD3632C98C7DE0098C7E8 /* WeatherForecast */,
 				AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */,
 				AB2CD3132C98B13A0098C7E8 /* ContentView.swift */,
 				AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */,
@@ -247,6 +257,48 @@
 				AB2CD35D2C98C08D0098C7E8 /* WeatherRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		AB2CD3632C98C7DE0098C7E8 /* WeatherForecast */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3712C98CD3E0098C7E8 /* Enums */,
+				AB2CD3642C98C7EB0098C7E8 /* Views */,
+				AB2CD3662C98C8060098C7E8 /* WeatherForecastView.swift */,
+				AB2CD3682C98C8140098C7E8 /* WeatherForecastViewModel.swift */,
+			);
+			path = WeatherForecast;
+			sourceTree = "<group>";
+		};
+		AB2CD3642C98C7EB0098C7E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB2CD36B2C98CB6F0098C7E8 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD36C2C98CB7F0098C7E8 /* AlertManager */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		AB2CD36C2C98CB7F0098C7E8 /* AlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD36D2C98CB8E0098C7E8 /* AlertManager.swift */,
+			);
+			path = AlertManager;
+			sourceTree = "<group>";
+		};
+		AB2CD3712C98CD3E0098C7E8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3722C98CD4C0098C7E8 /* UnitsEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,16 +440,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2CD36E2C98CB8E0098C7E8 /* AlertManager.swift in Sources */,
 				AB2CD30D2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift in Sources */,
 				AB2CD35C2C98BF430098C7E8 /* WeatherRouter.swift in Sources */,
 				AB2CD30F2C98B13A0098C7E8 /* Persistence.swift in Sources */,
 				AB2CD3142C98B13A0098C7E8 /* ContentView.swift in Sources */,
 				AB2CD33F2C98B1E50098C7E8 /* AppDelegate.swift in Sources */,
 				AB2CD3492C98B6A00098C7E8 /* Router.swift in Sources */,
+				AB2CD3692C98C8140098C7E8 /* WeatherForecastViewModel.swift in Sources */,
+				AB2CD3672C98C8060098C7E8 /* WeatherForecastView.swift in Sources */,
 				AB2CD3122C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld in Sources */,
 				AB2CD35A2C98BD340098C7E8 /* DIContainer.swift in Sources */,
 				AB2CD3602C98C0E30098C7E8 /* WeatherRepositoryImpl.swift in Sources */,
 				AB2CD34B2C98B7040098C7E8 /* APIError.swift in Sources */,
+				AB2CD3732C98CD4C0098C7E8 /* UnitsEnum.swift in Sources */,
 				AB2CD35E2C98C08D0098C7E8 /* WeatherRepository.swift in Sources */,
 				AB2CD3622C98C1790098C7E8 /* GetWeatherForecastUseCase.swift in Sources */,
 				AB2CD3542C98BC190098C7E8 /* WeatherForecast.swift in Sources */,
