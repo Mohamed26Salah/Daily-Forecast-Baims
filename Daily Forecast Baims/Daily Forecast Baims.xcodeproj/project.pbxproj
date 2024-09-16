@@ -18,6 +18,16 @@
 		AB2CD3302C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */; };
 		AB2CD33D2C98B16C0098C7E8 /* ApiKeys in Resources */ = {isa = PBXBuildFile; fileRef = AB2CD33C2C98B16C0098C7E8 /* ApiKeys */; };
 		AB2CD33F2C98B1E50098C7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD33E2C98B1E50098C7E8 /* AppDelegate.swift */; };
+		AB2CD3422C98B63D0098C7E8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AB2CD3412C98B63D0098C7E8 /* Alamofire */; };
+		AB2CD3452C98B65A0098C7E8 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = AB2CD3442C98B65A0098C7E8 /* Factory */; };
+		AB2CD3492C98B6A00098C7E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3482C98B6A00098C7E8 /* Router.swift */; };
+		AB2CD34B2C98B7040098C7E8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD34A2C98B7040098C7E8 /* APIError.swift */; };
+		AB2CD3542C98BC190098C7E8 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3532C98BC190098C7E8 /* WeatherForecast.swift */; };
+		AB2CD35A2C98BD340098C7E8 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3592C98BD340098C7E8 /* DIContainer.swift */; };
+		AB2CD35C2C98BF430098C7E8 /* WeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD35B2C98BF430098C7E8 /* WeatherRouter.swift */; };
+		AB2CD35E2C98C08D0098C7E8 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD35D2C98C08D0098C7E8 /* WeatherRepository.swift */; };
+		AB2CD3602C98C0E30098C7E8 /* WeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD35F2C98C0E30098C7E8 /* WeatherRepositoryImpl.swift */; };
+		AB2CD3622C98C1790098C7E8 /* GetWeatherForecastUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3612C98C1790098C7E8 /* GetWeatherForecastUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,14 @@
 		AB2CD32F2C98B13C0098C7E8 /* Daily_Forecast_BaimsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Forecast_BaimsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB2CD33C2C98B16C0098C7E8 /* ApiKeys */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApiKeys; sourceTree = "<group>"; };
 		AB2CD33E2C98B1E50098C7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB2CD3482C98B6A00098C7E8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		AB2CD34A2C98B7040098C7E8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AB2CD3532C98BC190098C7E8 /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		AB2CD3592C98BD340098C7E8 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		AB2CD35B2C98BF430098C7E8 /* WeatherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRouter.swift; sourceTree = "<group>"; };
+		AB2CD35D2C98C08D0098C7E8 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		AB2CD35F2C98C0E30098C7E8 /* WeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImpl.swift; sourceTree = "<group>"; };
+		AB2CD3612C98C1790098C7E8 /* GetWeatherForecastUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherForecastUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2CD3422C98B63D0098C7E8 /* Alamofire in Frameworks */,
+				AB2CD3452C98B65A0098C7E8 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +124,12 @@
 		AB2CD30B2C98B13A0098C7E8 /* Daily Forecast Baims */ = {
 			isa = PBXGroup;
 			children = (
+				AB2CD33E2C98B1E50098C7E8 /* AppDelegate.swift */,
 				AB2CD30C2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift */,
+				AB2CD3472C98B6940098C7E8 /* Core */,
+				AB2CD3462C98B6650098C7E8 /* Network */,
 				AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */,
 				AB2CD3132C98B13A0098C7E8 /* ContentView.swift */,
-				AB2CD33E2C98B1E50098C7E8 /* AppDelegate.swift */,
 				AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */,
 				AB2CD3172C98B13C0098C7E8 /* Daily_Forecast_Baims.entitlements */,
 				AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */,
@@ -141,6 +163,92 @@
 			path = "Daily Forecast BaimsUITests";
 			sourceTree = "<group>";
 		};
+		AB2CD3462C98B6650098C7E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD34D2C98BB120098C7E8 /* Data */,
+				AB2CD34E2C98BB160098C7E8 /* Domain */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AB2CD3472C98B6940098C7E8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3482C98B6A00098C7E8 /* Router.swift */,
+				AB2CD34A2C98B7040098C7E8 /* APIError.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AB2CD34D2C98BB120098C7E8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD34F2C98BB590098C7E8 /* Models */,
+				AB2CD3512C98BB6D0098C7E8 /* Router */,
+				AB2CD3502C98BB600098C7E8 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AB2CD34E2C98BB160098C7E8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3582C98BD240098C7E8 /* Repository */,
+				AB2CD3572C98BD1A0098C7E8 /* UseCase */,
+				AB2CD3592C98BD340098C7E8 /* DIContainer.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AB2CD34F2C98BB590098C7E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3522C98BB840098C7E8 /* DTO */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB2CD3502C98BB600098C7E8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD35F2C98C0E30098C7E8 /* WeatherRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AB2CD3512C98BB6D0098C7E8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD35B2C98BF430098C7E8 /* WeatherRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AB2CD3522C98BB840098C7E8 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3532C98BC190098C7E8 /* WeatherForecast.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		AB2CD3572C98BD1A0098C7E8 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD3612C98C1790098C7E8 /* GetWeatherForecastUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AB2CD3582C98BD240098C7E8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD35D2C98C08D0098C7E8 /* WeatherRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +265,10 @@
 			dependencies = (
 			);
 			name = "Daily Forecast Baims";
+			packageProductDependencies = (
+				AB2CD3412C98B63D0098C7E8 /* Alamofire */,
+				AB2CD3442C98B65A0098C7E8 /* Factory */,
+			);
 			productName = "Daily Forecast Baims";
 			productReference = AB2CD3092C98B13A0098C7E8 /* Daily Forecast Baims.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +341,10 @@
 				Base,
 			);
 			mainGroup = AB2CD3002C98B13A0098C7E8;
+			packageReferences = (
+				AB2CD3402C98B63D0098C7E8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AB2CD3432C98B65A0098C7E8 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = AB2CD30A2C98B13A0098C7E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,10 +389,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB2CD30D2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift in Sources */,
+				AB2CD35C2C98BF430098C7E8 /* WeatherRouter.swift in Sources */,
 				AB2CD30F2C98B13A0098C7E8 /* Persistence.swift in Sources */,
 				AB2CD3142C98B13A0098C7E8 /* ContentView.swift in Sources */,
 				AB2CD33F2C98B1E50098C7E8 /* AppDelegate.swift in Sources */,
+				AB2CD3492C98B6A00098C7E8 /* Router.swift in Sources */,
 				AB2CD3122C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld in Sources */,
+				AB2CD35A2C98BD340098C7E8 /* DIContainer.swift in Sources */,
+				AB2CD3602C98C0E30098C7E8 /* WeatherRepositoryImpl.swift in Sources */,
+				AB2CD34B2C98B7040098C7E8 /* APIError.swift in Sources */,
+				AB2CD35E2C98C08D0098C7E8 /* WeatherRepository.swift in Sources */,
+				AB2CD3622C98C1790098C7E8 /* GetWeatherForecastUseCase.swift in Sources */,
+				AB2CD3542C98BC190098C7E8 /* WeatherForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +757,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB2CD3402C98B63D0098C7E8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		AB2CD3432C98B65A0098C7E8 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB2CD3412C98B63D0098C7E8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2CD3402C98B63D0098C7E8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AB2CD3442C98B65A0098C7E8 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB2CD3432C98B65A0098C7E8 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */ = {
