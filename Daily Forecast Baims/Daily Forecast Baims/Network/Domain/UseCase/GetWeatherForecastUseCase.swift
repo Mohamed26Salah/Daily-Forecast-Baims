@@ -9,15 +9,15 @@ import Foundation
 import Factory
 import Combine
 
-public protocol GetWeatherForecastUseCase {
-    func execute() -> AnyPublisher<[City]?, APIError>
+protocol GetWeatherForecastUseCase {
+    func execute(lat: Double, lon: Double, units: String) -> AnyPublisher<WeatherForecast, APIError>
 }
 
 class GetWeatherForecastUseCaseImpl: GetWeatherForecastUseCase {
 
-    @Injected(\.weatherRepository) private var merchantRepository
+    @Injected(\.weatherRepository) private var weatherRepository
 
-    func execute() -> AnyPublisher<[City]?, APIError> {
-        return merchantRepository.getCities().eraseToAnyPublisher()
+    func execute(lat: Double, lon: Double, units: String) -> AnyPublisher<WeatherForecast, APIError> {
+        return weatherRepository.getWeatherForecast(lat: lat, lon: lon, units: units).eraseToAnyPublisher()
     }
 }
