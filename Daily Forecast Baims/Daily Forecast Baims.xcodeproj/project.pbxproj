@@ -32,6 +32,10 @@
 		AB2CD3692C98C8140098C7E8 /* WeatherForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3682C98C8140098C7E8 /* WeatherForecastViewModel.swift */; };
 		AB2CD36E2C98CB8E0098C7E8 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD36D2C98CB8E0098C7E8 /* AlertManager.swift */; };
 		AB2CD3732C98CD4C0098C7E8 /* UnitsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CD3722C98CD4C0098C7E8 /* UnitsEnum.swift */; };
+		ABB0F5EC2C99DA4C008642F5 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = ABB0F5EB2C99DA4C008642F5 /* Cities.json */; };
+		ABB0F5EE2C99DA9D008642F5 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5ED2C99DA9D008642F5 /* City.swift */; };
+		ABB0F5F02C99DB00008642F5 /* LocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5EF2C99DB00008642F5 /* LocalProvider.swift */; };
+		ABB0F5F22C99DB83008642F5 /* GetCitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5F12C99DB83008642F5 /* GetCitiesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		AB2CD3682C98C8140098C7E8 /* WeatherForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewModel.swift; sourceTree = "<group>"; };
 		AB2CD36D2C98CB8E0098C7E8 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		AB2CD3722C98CD4C0098C7E8 /* UnitsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsEnum.swift; sourceTree = "<group>"; };
+		ABB0F5EB2C99DA4C008642F5 /* Cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
+		ABB0F5ED2C99DA9D008642F5 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		ABB0F5EF2C99DB00008642F5 /* LocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProvider.swift; sourceTree = "<group>"; };
+		ABB0F5F12C99DB83008642F5 /* GetCitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,7 @@
 			children = (
 				AB2CD3482C98B6A00098C7E8 /* Router.swift */,
 				AB2CD34A2C98B7040098C7E8 /* APIError.swift */,
+				ABB0F5EF2C99DB00008642F5 /* LocalProvider.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 			children = (
 				AB2CD3582C98BD240098C7E8 /* Repository */,
 				AB2CD3572C98BD1A0098C7E8 /* UseCase */,
+				ABB0F5EB2C99DA4C008642F5 /* Cities.json */,
 				AB2CD3592C98BD340098C7E8 /* DIContainer.swift */,
 			);
 			path = Domain;
@@ -239,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2CD3532C98BC190098C7E8 /* WeatherForecast.swift */,
+				ABB0F5ED2C99DA9D008642F5 /* City.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2CD3612C98C1790098C7E8 /* GetWeatherForecastUseCase.swift */,
+				ABB0F5F12C99DB83008642F5 /* GetCitiesUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -416,6 +428,7 @@
 				AB2CD33D2C98B16C0098C7E8 /* ApiKeys in Resources */,
 				AB2CD31A2C98B13C0098C7E8 /* Preview Assets.xcassets in Resources */,
 				AB2CD3162C98B13C0098C7E8 /* Assets.xcassets in Resources */,
+				ABB0F5EC2C99DA4C008642F5 /* Cities.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,13 +455,16 @@
 			files = (
 				AB2CD36E2C98CB8E0098C7E8 /* AlertManager.swift in Sources */,
 				AB2CD30D2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift in Sources */,
+				ABB0F5EE2C99DA9D008642F5 /* City.swift in Sources */,
 				AB2CD35C2C98BF430098C7E8 /* WeatherRouter.swift in Sources */,
 				AB2CD30F2C98B13A0098C7E8 /* Persistence.swift in Sources */,
 				AB2CD3142C98B13A0098C7E8 /* ContentView.swift in Sources */,
 				AB2CD33F2C98B1E50098C7E8 /* AppDelegate.swift in Sources */,
+				ABB0F5F02C99DB00008642F5 /* LocalProvider.swift in Sources */,
 				AB2CD3492C98B6A00098C7E8 /* Router.swift in Sources */,
 				AB2CD3692C98C8140098C7E8 /* WeatherForecastViewModel.swift in Sources */,
 				AB2CD3672C98C8060098C7E8 /* WeatherForecastView.swift in Sources */,
+				ABB0F5F22C99DB83008642F5 /* GetCitiesUseCase.swift in Sources */,
 				AB2CD3122C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld in Sources */,
 				AB2CD35A2C98BD340098C7E8 /* DIContainer.swift in Sources */,
 				AB2CD3602C98C0E30098C7E8 /* WeatherRepositoryImpl.swift in Sources */,

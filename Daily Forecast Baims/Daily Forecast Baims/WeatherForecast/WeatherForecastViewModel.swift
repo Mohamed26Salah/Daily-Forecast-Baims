@@ -13,11 +13,13 @@ import Combine
 
 class WeatherForecastViewModel: ObservableObject {
     @Injected(\.getWeatherForecastUseCase) private var getWeatherForecastUseCase
+    @Injected(\.getCitiesUseCase) private var getCitiesUseCase
 
     private var cancellables = Set<AnyCancellable>()
 
     
     public init() {
+        getCities()
         getWeatherForecast()
     }
 }
@@ -44,5 +46,20 @@ extension WeatherForecastViewModel {
                 print("Salah I got \(response)")
             })
             .store(in: &cancellables)
+    }
+}
+
+//MARK: - Local Api Calls -
+
+extension WeatherForecastViewModel {
+    public func getCities() {
+        getCitiesUseCase.execute { [weak self] result in
+            switch result {
+            case .success(let cities):
+                print("Sala I got \(cities)")
+            case .failure(let error):
+                AlertManager.show(message: error.localizedDescription)
+            }
+        }
     }
 }
