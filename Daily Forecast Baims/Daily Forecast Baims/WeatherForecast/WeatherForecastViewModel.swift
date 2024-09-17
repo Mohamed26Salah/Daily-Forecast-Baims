@@ -69,8 +69,10 @@ extension WeatherForecastViewModel {
                 }
             }, receiveValue: { [weak self] response in
                 guard let self = self else {return}
-                self.weatherForecast = response
-                self.isWeatherForecastLoading = false
+                withAnimation {
+                    self.weatherForecast = response
+                    self.isWeatherForecastLoading = false
+                }
                 print("Salah I got \(response)")
             })
             .store(in: &cancellables)
