@@ -83,7 +83,7 @@ extension RequestBuilder {
     }
     
     @available(iOS 13.0, *)
-    public func fetch<T: Codable>() -> AnyPublisher<T, APIError> {
+    public func fetch<T: Decodable>() -> AnyPublisher<T, APIError> {
         printURL()
 
         return AF

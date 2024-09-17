@@ -18,8 +18,18 @@ public struct WeatherForecastView: View {
     public var body: some View {
         VStack {
             CitiesDropDown(selectedCity: $viewModel.selectedCity, cities: viewModel.cities)
-            Spacer()
+            ScrollView {
+                LazyVStack(spacing: 16) {
+                    ForEach(viewModel.weatherForecast?.list ?? []) { day in
+                        WeatherDayView(day: day)
+                    }
+                    .padding(.top, 20)
+                }
+                .padding()
+            }
+            .padding(.top, -20)
         }
+        .background(.ultraThinMaterial)
     }
 }
 

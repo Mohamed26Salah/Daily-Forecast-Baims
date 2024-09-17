@@ -7,160 +7,64 @@
 
 import Foundation
 
-// MARK: - RequestDetails
-struct WeatherForecast: Codable {
-    var cod: String
-    var message: Int
-    var cnt: Int
-    var list: [WeatherList]
-    var city: City
+// MARK: - WeatherForecast -
+
+struct WeatherForecast: Decodable, Identifiable {
+    let id: Int
+    let list: [WeatherDay]
 
     enum CodingKeys: String, CodingKey {
-        case cod = "cod"
-        case message = "message"
-        case cnt = "cnt"
-        case list = "list"
-        case city = "city"
+        case city, list
+    }
+
+    enum CityKeys: String, CodingKey {
+        case id
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let cityContainer = try container.nestedContainer(keyedBy: CityKeys.self, forKey: .city)
+        id = try cityContainer.decode(Int.self, forKey: .id)
+        
+        list = try container.decode([WeatherDay].self, forKey: .list)
     }
 }
 
-// MARK: - City
-struct City: Codable {
-    var id: Int
-    var name: String
-    var coord: Coord
-    var country: String
-    var population: Int
-    var timezone: Int
-    var sunrise: Int
-    var sunset: Int
+// MARK: - WeatherDay -
+
+struct WeatherDay: Decodable, Identifiable {
+    let id: String
+    let date: String
+    let temperature: Double
+    let weatherIcon: String
+    let weatherDescription: String
 
     enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case name = "name"
-        case coord = "coord"
-        case country = "country"
-        case population = "population"
-        case timezone = "timezone"
-        case sunrise = "sunrise"
-        case sunset = "sunset"
+        case dt_txt, main, weather
     }
-}
 
-// MARK: - Coord
-struct Coord: Codable {
-    var lat: Double
-    var lon: Double
-
-    enum CodingKeys: String, CodingKey {
-        case lat = "lat"
-        case lon = "lon"
+    enum MainKeys: String, CodingKey {
+        case temp
     }
-}
 
-// MARK: - WeatherList
-struct WeatherList: Codable {
-    var dt: Int
-    var main: MainClass
-    var weather: [Weather]
-    var clouds: Clouds
-    var wind: Wind
-    var visibility: Int
-    var pop: Int
-    var sys: Sys
-    var dtTxt: String
-
-    enum CodingKeys: String, CodingKey {
-        case dt = "dt"
-        case main = "main"
-        case weather = "weather"
-        case clouds = "clouds"
-        case wind = "wind"
-        case visibility = "visibility"
-        case pop = "pop"
-        case sys = "sys"
-        case dtTxt = "dt_txt"
+    enum WeatherKeys: String, CodingKey {
+        case icon, description
     }
-}
 
-// MARK: - Clouds
-struct Clouds: Codable {
-    var all: Int
-
-    enum CodingKeys: String, CodingKey {
-        case all = "all"
-    }
-}
-
-// MARK: - MainClass
-struct MainClass: Codable {
-    var temp: Double
-    var feelsLike: Double
-    var tempMin: Double
-    var tempMax: Double
-    var pressure: Int
-    var seaLevel: Int
-    var grndLevel: Int
-    var humidity: Int
-    var tempKf: Double
-
-    enum CodingKeys: String, CodingKey {
-        case temp = "temp"
-        case feelsLike = "feels_like"
-        case tempMin = "temp_min"
-        case tempMax = "temp_max"
-        case pressure = "pressure"
-        case seaLevel = "sea_level"
-        case grndLevel = "grnd_level"
-        case humidity = "humidity"
-        case tempKf = "temp_kf"
-    }
-}
-
-// MARK: - Sys
-struct Sys: Codable {
-    var pod: Pod
-
-    enum CodingKeys: String, CodingKey {
-        case pod = "pod"
-    }
-}
-
-enum Pod: String, Codable {
-    case d = "d"
-    case n = "n"
-}
-
-// MARK: - Weather
-struct Weather: Codable {
-    var id: Int
-    var main: MainEnum
-    var description: String
-    var icon: String
-
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case main = "main"
-        case description = "description"
-        case icon = "icon"
-    }
-}
-
-
-enum MainEnum: String, Codable {
-    case clear = "Clear"
-    case clouds = "Clouds"
-}
-
-// MARK: - Wind
-struct Wind: Codable {
-    var speed: Double
-    var deg: Int
-    var gust: Double
-
-    enum CodingKeys: String, CodingKey {
-        case speed = "speed"
-        case deg = "deg"
-        case gust = "gust"
+    // Custom initializer to decode WeatherDay
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        date = try container.decode(String.self, forKey: .dt_txt)
+        id = date
+        
+        let mainContainer = try container.nestedContainer(keyedBy: MainKeys.self, forKey: .main)
+        temperature = try mainContainer.decode(Double.self, forKey: .temp)
+        
+        var weatherContainer = try container.nestedUnkeyedContainer(forKey: .weather)
+        let weatherItem = try weatherContainer.nestedContainer(keyedBy: WeatherKeys.self)
+        weatherIcon = try weatherItem.decode(String.self, forKey: .icon)
+        weatherDescription = try weatherItem.decode(String.self, forKey: .description)
     }
 }

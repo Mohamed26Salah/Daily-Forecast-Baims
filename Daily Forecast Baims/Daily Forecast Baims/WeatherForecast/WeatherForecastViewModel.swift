@@ -17,7 +17,8 @@ class WeatherForecastViewModel: ObservableObject {
     
     @Published var cities: [CityJson] = []
     @Published var selectedCity: CityJson?
-    
+    @Published var weatherForecast: WeatherForecast?
+
     private var cancellables = Set<AnyCancellable>()
 
     
@@ -57,6 +58,7 @@ extension WeatherForecastViewModel {
                 }
             }, receiveValue: { [weak self] response in
                 guard let self = self else {return}
+                self.weatherForecast = response
 //                self.reportingAnIssueLoading = false
 //                self.showSuccessReportAnIssueView = true
                 print("Salah I got \(response)")
@@ -75,9 +77,18 @@ extension WeatherForecastViewModel {
             case .success(let cities):
                 self.cities = cities
                 self.selectedCity = cities.first
+                print("Salah cities are \(cities)")
             case .failure(let error):
                 AlertManager.show(message: error.localizedDescription)
             }
         }
     }
 }
+
+//MARK: - Helper Functions -
+
+extension WeatherForecastViewModel {
+
+}
+
+
