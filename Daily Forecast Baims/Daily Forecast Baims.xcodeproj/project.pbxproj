@@ -158,13 +158,11 @@
 				AB2CD30C2C98B13A0098C7E8 /* Daily_Forecast_BaimsApp.swift */,
 				AB2CD3472C98B6940098C7E8 /* Core */,
 				AB2CD3462C98B6650098C7E8 /* Network */,
+				ABB0F60B2C9A2269008642F5 /* Caching */,
 				AB2CD36B2C98CB6F0098C7E8 /* DesignSystem */,
 				AB2CD3632C98C7DE0098C7E8 /* WeatherForecast */,
-				AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */,
-				AB2CD3132C98B13A0098C7E8 /* ContentView.swift */,
-				AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */,
 				AB2CD3172C98B13C0098C7E8 /* Daily_Forecast_Baims.entitlements */,
-				AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */,
+				AB2CD3152C98B13C0098C7E8 /* Assets.xcassets */,
 				AB2CD3182C98B13C0098C7E8 /* Preview Content */,
 			);
 			path = "Daily Forecast Baims";
@@ -364,6 +362,16 @@
 				ABB0F6072C9A1084008642F5 /* String + Extenstion.swift */,
 			);
 			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		ABB0F60B2C9A2269008642F5 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CD30E2C98B13A0098C7E8 /* Persistence.swift */,
+				AB2CD3132C98B13A0098C7E8 /* ContentView.swift */,
+				AB2CD3102C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld */,
+			);
+			path = Caching;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
