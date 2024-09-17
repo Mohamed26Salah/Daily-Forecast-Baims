@@ -29,7 +29,24 @@ struct WeatherForecast: Decodable, Identifiable {
         
         list = try container.decode([WeatherDay].self, forKey: .list)
     }
+    
+    init(id: Int, list: [WeatherDay]) {
+        self.id = id
+        self.list = list
+    }
 }
+// MARK: - WeatherForecast Mock -
+
+extension WeatherForecast {
+    static func mockWeatherForecast(id: Int = 1, daysCount: Int = 5) -> WeatherForecast {
+        let weatherDays = (1...daysCount).map { i in
+            WeatherDay.mockWeatherDay(id: "\(i)", date: "2024-09-\(i < 10 ? "0" : "")\(i) 12:00:00", temperature: Double(20 + i), weatherIcon: "01d", weatherDescription: "Clear sky")
+        }
+        return WeatherForecast(id: id, list: weatherDays)
+    }
+}
+
+
 
 // MARK: - WeatherDay -
 
@@ -66,5 +83,21 @@ struct WeatherDay: Decodable, Identifiable {
         let weatherItem = try weatherContainer.nestedContainer(keyedBy: WeatherKeys.self)
         weatherIcon = try weatherItem.decode(String.self, forKey: .icon)
         weatherDescription = try weatherItem.decode(String.self, forKey: .description)
+    }
+    
+    init(id: String, date: String, temperature: Double, weatherIcon: String, weatherDescription: String) {
+        self.id = id
+        self.date = date
+        self.temperature = temperature
+        self.weatherIcon = weatherIcon
+        self.weatherDescription = weatherDescription
+    }
+}
+
+// MARK: - WeatherDay Mock -
+
+extension WeatherDay {
+    static func mockWeatherDay(id: String = "1", date: String = "2024-09-01 12:00:00", temperature: Double = 25.0, weatherIcon: String = "01d", weatherDescription: String = "Clear sky") -> WeatherDay {
+        return WeatherDay(id: id, date: date, temperature: temperature, weatherIcon: weatherIcon, weatherDescription: weatherDescription)
     }
 }

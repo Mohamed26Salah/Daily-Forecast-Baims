@@ -18,6 +18,7 @@ class WeatherForecastViewModel: ObservableObject {
     @Published var cities: [CityJson] = []
     @Published var selectedCity: CityJson?
     @Published var weatherForecast: WeatherForecast?
+    @Published var isWeatherForecastLoading: Bool = true
 
     private var cancellables = Set<AnyCancellable>()
 
@@ -27,7 +28,7 @@ class WeatherForecastViewModel: ObservableObject {
         susbcribeSelectedCity()
     }
 }
-//MARK: - Subscribe To Publishers Changes
+//MARK: - Subscribe To Publishers Changes -
 
 extension WeatherForecastViewModel {
     private func susbcribeSelectedCity() {
@@ -41,26 +42,35 @@ extension WeatherForecastViewModel {
     }
 }
 
+
+//MARK: - Subscribe To Publishers Changes -
+
+extension WeatherForecastViewModel {
+    private func manageRedactedAnimation() {
+        self.isWeatherForecastLoading = true
+        self.weatherForecast = WeatherForecast.mockWeatherForecast()
+    }
+}
+
 //MARK: - Api Calls -
 
 extension WeatherForecastViewModel {
     public func getWeatherForecast(lat: Double, lon: Double) {
-//        reportingAnIssueLoading = true
+        manageRedactedAnimation()
         getWeatherForecastUseCase.execute(lat: lat, lon: lon, units: UnitsEnum.metric.rawValue)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
-//                self.reportingAnIssueLoading = false
                 switch completion {
                 case .failure(let error):
                     AlertManager.show(message: error.localizedDescription)
+                    self.isWeatherForecastLoading = false
                 case .finished:
                     break
                 }
             }, receiveValue: { [weak self] response in
                 guard let self = self else {return}
                 self.weatherForecast = response
-//                self.reportingAnIssueLoading = false
-//                self.showSuccessReportAnIssueView = true
+                self.isWeatherForecastLoading = false
                 print("Salah I got \(response)")
             })
             .store(in: &cancellables)

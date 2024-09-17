@@ -30,6 +30,7 @@ public struct WeatherForecastView: View {
             .padding(.top, -20)
         }
         .background(.ultraThinMaterial)
+        .redactedLoading(isLoading: $viewModel.isWeatherForecastLoading)
     }
 }
 

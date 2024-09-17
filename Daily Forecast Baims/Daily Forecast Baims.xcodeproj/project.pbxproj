@@ -42,6 +42,7 @@
 		ABB0F6032C99FB56008642F5 /* WeatherDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F6022C99FB56008642F5 /* WeatherDayView.swift */; };
 		ABB0F6052C9A0F20008642F5 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F6042C9A0F20008642F5 /* DateUtils.swift */; };
 		ABB0F6082C9A1084008642F5 /* String + Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F6072C9A1084008642F5 /* String + Extenstion.swift */; };
+		ABB0F60A2C9A1247008642F5 /* RedactedLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F6092C9A1246008642F5 /* RedactedLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		ABB0F6022C99FB56008642F5 /* WeatherDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayView.swift; sourceTree = "<group>"; };
 		ABB0F6042C9A0F20008642F5 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		ABB0F6072C9A1084008642F5 /* String + Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extenstion.swift"; sourceTree = "<group>"; };
+		ABB0F6092C9A1246008642F5 /* RedactedLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 		ABB0F5F42C99DF05008642F5 /* Componants */ = {
 			isa = PBXGroup;
 			children = (
+				ABB0F6092C9A1246008642F5 /* RedactedLoading.swift */,
 			);
 			path = Componants;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				AB2CD3732C98CD4C0098C7E8 /* UnitsEnum.swift in Sources */,
 				AB2CD35E2C98C08D0098C7E8 /* WeatherRepository.swift in Sources */,
 				AB2CD3622C98C1790098C7E8 /* GetWeatherForecastUseCase.swift in Sources */,
+				ABB0F60A2C9A1247008642F5 /* RedactedLoading.swift in Sources */,
 				AB2CD3542C98BC190098C7E8 /* WeatherForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
