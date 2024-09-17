@@ -14,22 +14,38 @@ import Combine
 class WeatherForecastViewModel: ObservableObject {
     @Injected(\.getWeatherForecastUseCase) private var getWeatherForecastUseCase
     @Injected(\.getCitiesUseCase) private var getCitiesUseCase
-
+    
+    @Published var cities: [CityJson] = []
+    @Published var selectedCity: CityJson?
+    
     private var cancellables = Set<AnyCancellable>()
 
     
     public init() {
         getCities()
-        getWeatherForecast()
+        susbcribeSelectedCity()
+    }
+}
+//MARK: - Subscribe To Publishers Changes
+
+extension WeatherForecastViewModel {
+    private func susbcribeSelectedCity() {
+        $selectedCity
+            .compactMap { $0 }
+            .sink { [weak self] city in
+                guard let self = self else { return }
+                self.getWeatherForecast(lat: city.lat, lon: city.lon)
+            }
+            .store(in: &cancellables)
     }
 }
 
 //MARK: - Api Calls -
 
 extension WeatherForecastViewModel {
-    public func getWeatherForecast() {
+    public func getWeatherForecast(lat: Double, lon: Double) {
 //        reportingAnIssueLoading = true
-        getWeatherForecastUseCase.execute(lat: 30.7956597, lon: 30.7956597, units: UnitsEnum.metric.rawValue)
+        getWeatherForecastUseCase.execute(lat: lat, lon: lon, units: UnitsEnum.metric.rawValue)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
 //                self.reportingAnIssueLoading = false
@@ -54,9 +70,11 @@ extension WeatherForecastViewModel {
 extension WeatherForecastViewModel {
     public func getCities() {
         getCitiesUseCase.execute { [weak self] result in
+            guard let self = self else {return}
             switch result {
             case .success(let cities):
-                print("Sala I got \(cities)")
+                self.cities = cities
+                self.selectedCity = cities.first
             case .failure(let error):
                 AlertManager.show(message: error.localizedDescription)
             }

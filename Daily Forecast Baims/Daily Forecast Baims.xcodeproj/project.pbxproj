@@ -36,6 +36,9 @@
 		ABB0F5EE2C99DA9D008642F5 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5ED2C99DA9D008642F5 /* City.swift */; };
 		ABB0F5F02C99DB00008642F5 /* LocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5EF2C99DB00008642F5 /* LocalProvider.swift */; };
 		ABB0F5F22C99DB83008642F5 /* GetCitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5F12C99DB83008642F5 /* GetCitiesUseCase.swift */; };
+		ABB0F5FA2C99E111008642F5 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5F92C99E111008642F5 /* Icons.swift */; };
+		ABB0F5FF2C99E285008642F5 /* ClickOnOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F5FE2C99E285008642F5 /* ClickOnOptions.swift */; };
+		ABB0F6012C99E664008642F5 /* CitiesDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F6002C99E664008642F5 /* CitiesDropDown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		ABB0F5ED2C99DA9D008642F5 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		ABB0F5EF2C99DB00008642F5 /* LocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProvider.swift; sourceTree = "<group>"; };
 		ABB0F5F12C99DB83008642F5 /* GetCitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesUseCase.swift; sourceTree = "<group>"; };
+		ABB0F5F92C99E111008642F5 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		ABB0F5FE2C99E285008642F5 /* ClickOnOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickOnOptions.swift; sourceTree = "<group>"; };
+		ABB0F6002C99E664008642F5 /* CitiesDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesDropDown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +291,7 @@
 		AB2CD3642C98C7EB0098C7E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ABB0F6002C99E664008642F5 /* CitiesDropDown.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +299,9 @@
 		AB2CD36B2C98CB6F0098C7E8 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				ABB0F5FB2C99E269008642F5 /* Common */,
+				ABB0F5F82C99E102008642F5 /* Icons */,
+				ABB0F5F42C99DF05008642F5 /* Componants */,
 				AB2CD36C2C98CB7F0098C7E8 /* AlertManager */,
 			);
 			path = DesignSystem;
@@ -311,6 +321,29 @@
 				AB2CD3722C98CD4C0098C7E8 /* UnitsEnum.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		ABB0F5F42C99DF05008642F5 /* Componants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Componants;
+			sourceTree = "<group>";
+		};
+		ABB0F5F82C99E102008642F5 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				ABB0F5F92C99E111008642F5 /* Icons.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		ABB0F5FB2C99E269008642F5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ABB0F5FE2C99E285008642F5 /* ClickOnOptions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,13 +495,16 @@
 				AB2CD33F2C98B1E50098C7E8 /* AppDelegate.swift in Sources */,
 				ABB0F5F02C99DB00008642F5 /* LocalProvider.swift in Sources */,
 				AB2CD3492C98B6A00098C7E8 /* Router.swift in Sources */,
+				ABB0F5FF2C99E285008642F5 /* ClickOnOptions.swift in Sources */,
 				AB2CD3692C98C8140098C7E8 /* WeatherForecastViewModel.swift in Sources */,
+				ABB0F6012C99E664008642F5 /* CitiesDropDown.swift in Sources */,
 				AB2CD3672C98C8060098C7E8 /* WeatherForecastView.swift in Sources */,
 				ABB0F5F22C99DB83008642F5 /* GetCitiesUseCase.swift in Sources */,
 				AB2CD3122C98B13A0098C7E8 /* Daily_Forecast_Baims.xcdatamodeld in Sources */,
 				AB2CD35A2C98BD340098C7E8 /* DIContainer.swift in Sources */,
 				AB2CD3602C98C0E30098C7E8 /* WeatherRepositoryImpl.swift in Sources */,
 				AB2CD34B2C98B7040098C7E8 /* APIError.swift in Sources */,
+				ABB0F5FA2C99E111008642F5 /* Icons.swift in Sources */,
 				AB2CD3732C98CD4C0098C7E8 /* UnitsEnum.swift in Sources */,
 				AB2CD35E2C98C08D0098C7E8 /* WeatherRepository.swift in Sources */,
 				AB2CD3622C98C1790098C7E8 /* GetWeatherForecastUseCase.swift in Sources */,

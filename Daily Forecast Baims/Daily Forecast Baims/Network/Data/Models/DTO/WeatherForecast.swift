@@ -136,7 +136,7 @@ struct Weather: Codable {
     var id: Int
     var main: MainEnum
     var description: String
-    var icon: Icon
+    var icon: String
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -146,15 +146,6 @@ struct Weather: Codable {
     }
 }
 
-
-enum Icon: String, Codable {
-    case the01D = "01d"
-    case the01N = "01n"
-    case the02D = "02d"
-    case the03N = "03n"
-    case the04D = "04d"
-    case the04N = "04n"
-}
 
 enum MainEnum: String, Codable {
     case clear = "Clear"

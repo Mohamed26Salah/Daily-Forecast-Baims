@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - City
-struct CityJson: Codable {
+struct CityJson: Codable, Identifiable {
     var id: Int
     var cityNameAr: String
     var cityNameEn: String

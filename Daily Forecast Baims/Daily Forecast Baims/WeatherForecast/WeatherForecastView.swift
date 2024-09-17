@@ -17,7 +17,8 @@ public struct WeatherForecastView: View {
     
     public var body: some View {
         VStack {
-            Text("Hi Salah")
+            CitiesDropDown(selectedCity: $viewModel.selectedCity, cities: viewModel.cities)
+            Spacer()
         }
     }
 }
