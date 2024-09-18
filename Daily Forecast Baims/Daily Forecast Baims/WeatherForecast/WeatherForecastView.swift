@@ -18,17 +18,22 @@ public struct WeatherForecastView: View {
     public var body: some View {
         VStack {
             CitiesDropDown(selectedCity: $viewModel.selectedCity, cities: viewModel.cities)
+                .accessibilityIdentifier("CityDropdown")
             if viewModel.weatherForecast != nil {
                 dataIsNotAccurateView
+                    .accessibilityIdentifier("dataIsNotAccurateView")
                 
                 weatherListScrollView
                     .padding(.top, -20)
                     .redactedLoading(isLoading: $viewModel.isWeatherForecastLoading)
+                    .accessibilityIdentifier("weatherListScrollView")
+
             } else {
                 ErrorView {
                     guard let selectedCity = viewModel.selectedCity else { return }
                     viewModel.getWeatherForecast(lat: selectedCity.lat, lon: selectedCity.lon)
                 }
+                .accessibilityIdentifier("ErrorView")
                 Spacer()
             }
            
