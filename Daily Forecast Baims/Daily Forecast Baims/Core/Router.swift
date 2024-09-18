@@ -29,16 +29,7 @@ extension RequestBuilder {
     }
     
     public var headers: HTTPHeaders {
-        var headers = URLSessionConfiguration.default.headers
-//        let keychainService = Container.shared.keychainService()
-//        if let accessToken = keychainService.loadToken(forKey: KeychainConfiguration.accessTokenKey) {
-//            headers.add(name: "Authorization", value: "Bearer \(accessToken)")
-//        }
-//        if let lang = Localizator.shared.getLanguage()?.rawValue {
-//            headers.add(name: "Accept-Language", value: lang)
-//        }
-//        return headers
-       return headers
+       return URLSessionConfiguration.default.headers
     }
     
     public var url: URL {

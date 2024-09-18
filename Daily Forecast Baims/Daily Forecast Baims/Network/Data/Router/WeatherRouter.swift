@@ -16,7 +16,7 @@ enum WeatherRouter: RequestBuilder {
 
     internal var path: String {
         switch self {
-        case .getWeatherForecast(let lat, let lon, let units):
+        case .getWeatherForecast:
             return "forecast"
         }
     }
@@ -27,7 +27,7 @@ enum WeatherRouter: RequestBuilder {
             var params: [String: Any] = [:]
             params["lat"] = lat
             params["lon"] = lon
-            params["appid"] = readApiKey()
+            params["appid"] = "3a04b12f855b35069dc2dff0bdafaa45"
             params["units"] = units
             return params
         }
