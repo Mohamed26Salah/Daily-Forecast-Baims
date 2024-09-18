@@ -23,9 +23,9 @@ Here are some screenshots of the app:
 
 ## Dependencies 📦
 
-- [Alamofire](https://github.com/Alamofire/Alamofire) – For making HTTP network requests.
-- **CoreData** – For caching weather data locally.
 - **SwiftUI** – For building the user interface.
+- **CoreData** – For caching weather data locally.
+- [Alamofire](https://github.com/Alamofire/Alamofire) – For making HTTP network requests.
 - [Factory](https://github.com/hmlongco/Factory) – For dependency injection and managing app components.
 
 ## License 📄
