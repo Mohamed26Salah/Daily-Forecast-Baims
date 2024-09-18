@@ -10,7 +10,7 @@ import Factory
 
 extension Container {
     //MARK: Local
-    var weatherDataService : Factory<WeatherDataService> {
+    var weatherDataService : Factory<WeatherDataServiceProtocol> {
         Factory (self) { WeatherDataService() }
     }
 }

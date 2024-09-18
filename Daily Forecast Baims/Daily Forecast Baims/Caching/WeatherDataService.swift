@@ -8,7 +8,15 @@
 import Foundation
 import CoreData
 
-class WeatherDataService {
+
+protocol WeatherDataServiceProtocol {
+    func cacheWeatherForecast(_ weatherForecast: WeatherForecast, forCityId cityId: Int)
+    func addWeatherForecast(_ weatherForecast: WeatherForecast, forCityId cityId: Int)
+    func updateWeatherForecast(_ weatherForecast: WeatherForecast, forCityId cityId: Int)
+    func fetchWeatherForecast(by cityId: Int) -> WeatherForecast?
+}
+
+class WeatherDataService: WeatherDataServiceProtocol {
     
     private let context: NSManagedObjectContext
     
