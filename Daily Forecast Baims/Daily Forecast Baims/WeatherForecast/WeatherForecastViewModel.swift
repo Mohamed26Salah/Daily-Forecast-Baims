@@ -80,11 +80,9 @@ extension WeatherForecastViewModel {
                     self.isDataCached = false
                     if let selectedCityId = self.selectedCity?.id {
                         self.weatherDataService.cacheWeatherForecast(response, forCityId: selectedCityId)
-//                        print("Salah Saved \(self.weatherDataService.fetchWeatherForecast(by: selectedCityId))")
                     }
                     self.isWeatherForecastLoading = false
                 }
-                print("Salah I got \(response)")
             })
             .store(in: &cancellables)
     }
@@ -100,7 +98,6 @@ extension WeatherForecastViewModel {
             case .success(let cities):
                 self.cities = cities
                 self.selectedCity = cities.first
-                print("Salah cities are \(cities)")
             case .failure(let error):
                 AlertManager.show(message: error.localizedDescription)
             }
