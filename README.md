@@ -14,10 +14,12 @@ A simple SwiftUI-based iOS application that fetches and displays weather data fo
 
 Here are some screenshots of the app:
 
-![Screenshot 1](ScreenShots/1.PNG)
-![Screenshot 2](ScreenShots/2.PNG)
-![Screenshot 3](ScreenShots/3.PNG)
-![Screenshot 4](ScreenShots/4.PNG)
+<p align="center">
+  <img src="ScreenShots/1.PNG" alt="Screenshot 1" width="200"/>
+  <img src="ScreenShots/2.PNG" alt="Screenshot 2" width="200"/>
+  <img src="ScreenShots/3.PNG" alt="Screenshot 3" width="200"/>
+  <img src="ScreenShots/4.PNG" alt="Screenshot 4" width="200"/>
+</p>
 
 ## Dependencies 📦
 
