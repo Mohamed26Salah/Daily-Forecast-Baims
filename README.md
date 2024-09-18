@@ -9,6 +9,7 @@ A simple SwiftUI-based iOS application that fetches and displays weather data fo
 - 🌐 **API Integration**: The app fetches data from a weather API using Alamofire, based on the selected city’s latitude and longitude.
 - 🗂️ **Caching**: Weather data is cached locally using CoreData to ensure access even when the API fails or the device is offline.
 - 🏗️ **Dependency Injection**: The app uses the [Factory](https://github.com/hmlongco/Factory) package for dependency injection, allowing easy management of dependencies and improving testability.
+- 🧪 **Unit & UI Testing**: Comprehensive unit testing and UI testing to ensure functionality and user experience.
 
 ## Screenshots 📸
 
@@ -25,6 +26,7 @@ Here are some screenshots of the app:
 
 - **SwiftUI** – For building the user interface.
 - **CoreData** – For caching weather data locally.
+- **XCTest** for unit and UI testing.
 - [Alamofire](https://github.com/Alamofire/Alamofire) – For making HTTP network requests.
 - [Factory](https://github.com/hmlongco/Factory) – For dependency injection and managing app components.
 
