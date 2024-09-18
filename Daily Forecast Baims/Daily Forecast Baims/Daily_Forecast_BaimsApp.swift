@@ -15,9 +15,9 @@ struct Daily_Forecast_BaimsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//            WeatherForecastView()
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            WeatherForecastView()
         }
     }
 }

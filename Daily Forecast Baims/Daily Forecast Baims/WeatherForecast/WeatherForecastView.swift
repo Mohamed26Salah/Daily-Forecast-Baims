@@ -18,9 +18,20 @@ public struct WeatherForecastView: View {
     public var body: some View {
         VStack {
             CitiesDropDown(selectedCity: $viewModel.selectedCity, cities: viewModel.cities)
-            weatherListScrollView
-                .padding(.top, -20)
-                .redactedLoading(isLoading: $viewModel.isWeatherForecastLoading)
+            if viewModel.weatherForecast != nil {
+                dataIsNotAccurateView
+                
+                weatherListScrollView
+                    .padding(.top, -20)
+                    .redactedLoading(isLoading: $viewModel.isWeatherForecastLoading)
+            } else {
+                ErrorView {
+                    guard let selectedCity = viewModel.selectedCity else { return }
+                    viewModel.getWeatherForecast(lat: selectedCity.lat, lon: selectedCity.lon)
+                }
+                Spacer()
+            }
+           
         }
         .background(.ultraThinMaterial)
     }
@@ -33,6 +44,15 @@ public struct WeatherForecastView: View {
                 .padding(.top, 20)
             }
             .padding()
+        }
+    }
+    private var dataIsNotAccurateView: some View {
+        Group {
+            if viewModel.isDataCached {
+                Text("Data is not accurate!")
+                    .foregroundColor(.red)
+                    .font(.title3)
+            }
         }
     }
 }

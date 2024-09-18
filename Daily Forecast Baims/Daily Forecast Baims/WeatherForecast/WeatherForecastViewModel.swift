@@ -14,12 +14,14 @@ import Combine
 class WeatherForecastViewModel: ObservableObject {
     @Injected(\.getWeatherForecastUseCase) private var getWeatherForecastUseCase
     @Injected(\.getCitiesUseCase) private var getCitiesUseCase
-    
+    @Injected(\.weatherDataService) private var weatherDataService
+
     @Published var cities: [CityJson] = []
     @Published var selectedCity: CityJson?
     @Published var weatherForecast: WeatherForecast?
     @Published var isWeatherForecastLoading: Bool = true
-
+    @Published var isDataCached: Bool = false
+    
     private var cancellables = Set<AnyCancellable>()
 
     
@@ -62,7 +64,11 @@ extension WeatherForecastViewModel {
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure(let error):
-                    AlertManager.show(message: error.localizedDescription)
+//                    AlertManager.show(message: error.localizedDescription)
+                    if let selectedCityId = self.selectedCity?.id {
+                        self.weatherForecast = self.weatherDataService.fetchWeatherForecast(by: selectedCityId)
+                        self.isDataCached = true
+                    }
                     self.isWeatherForecastLoading = false
                 case .finished:
                     break
@@ -71,6 +77,11 @@ extension WeatherForecastViewModel {
                 guard let self = self else {return}
                 withAnimation {
                     self.weatherForecast = response
+                    self.isDataCached = false
+                    if let selectedCityId = self.selectedCity?.id {
+                        self.weatherDataService.cacheWeatherForecast(response, forCityId: selectedCityId)
+//                        print("Salah Saved \(self.weatherDataService.fetchWeatherForecast(by: selectedCityId))")
+                    }
                     self.isWeatherForecastLoading = false
                 }
                 print("Salah I got \(response)")
